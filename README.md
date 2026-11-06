@@ -9,11 +9,11 @@ network. NetworkX appears only in one verification cell, as an independent refer
 
 | | |
 |---|---|
-| **Notebook** | [`Project2_Network_Analysis_Graph_Theory.ipynb`](Project2_Network_Analysis_Graph_Theory.ipynb) |
+| **Notebook** |[`Project2_Network_Analysis_Graph_Theory.ipynb`](notebooks/Project2_Network_Analysis_Graph_Theory.ipynb) |
 | **Datasets** | Zachary's Karate Club (1977) and the college football network (2000), both embedded — no downloads |
 | **Stack** | Python 3, NumPy, Matplotlib, pandas (NetworkX optional) |
 | **Runtime** | under a minute on a free Colab CPU |
-| **Outputs** | 10 figures in [`figures/`](figures), printed result tables |
+| **Outputs** | 10 figures in [`visualizations/`](figures), printed result tables |
 
 ---
 
@@ -124,11 +124,11 @@ split when their conflict escalated.
 
 ### Degree / betweenness centrality
 
-![Centrality network and top-10 betweenness](figures/02_centrality_network.png)
+![Centrality network and top-10 betweenness](visualizations/02_centrality_network.png)
 
 ### Detected communities
 
-![Detected communities](figures/04_communities.png)
+![Detected communities](visualizations/04_communities.png)
 
 The Fiedler variant recovers the historical split **exactly**; Girvan–Newman's first cut gets 33 of 34
 members right. The literal Ng–Jordan–Weiss variant, which includes the trivial eigenvector, gets ARI
@@ -137,7 +137,7 @@ maximum-$Q$ partition is not always the historically meaningful one.
 
 ### Robustness
 
-![Fragmentation under targeted attacks](figures/05_robustness.png)
+![Fragmentation under targeted attacks](visualizations/05_robustness.png)
 
 Removing the top brokers shatters the karate network; removing random members barely dents it. The two
 panels give the same experiment with two denominators: the left asks whether the remaining graph stays
@@ -146,13 +146,13 @@ targeted immunisation and for protecting single points of failure.
 
 ### The second network
 
-![Football network](figures/07_football_structure.png)
+![Football network](visualizations/07_football_structure.png)
 
-![Cross-dataset centrality comparison](figures/08_centrality_comparison.png)
+![Cross-dataset centrality comparison](visualizations/08_centrality_comparison.png)
 
-![Football community structure](figures/09_football_communities.png)
+![Football community structure](visualizations/09_football_communities.png)
 
-![Cross-dataset robustness](figures/10_cross_dataset_robustness.png)
+![Cross-dataset robustness](visualizations/10_cross_dataset_robustness.png)
 
 The football network is larger and far harder to fragment, but its centrality rankings diverge much
 more than the karate club's. That is the main cross-dataset finding: the algorithms generalise, while
@@ -253,16 +253,16 @@ The PageRank difference is just a different stopping tolerance; both converge to
 
 | File | Content |
 |---|---|
-| [`01_adjacency_and_degrees.png`](figures/01_adjacency_and_degrees.png) | adjacency matrix + degree distribution |
-| [`02_centrality_network.png`](figures/02_centrality_network.png) | network coloured by betweenness + top-10 bar chart |
-| [`03_pagerank.png`](figures/03_pagerank.png) | power-iteration convergence + PageRank ranking |
-| [`04_communities.png`](figures/04_communities.png) | Fiedler vs literal NJW at $k=2$ and $k=4$ |
-| [`05_robustness.png`](figures/05_robustness.png) | karate fragmentation with both denominators |
-| [`06_centrality_correlation.png`](figures/06_centrality_correlation.png) | Pearson vs Spearman for karate |
-| [`07_football_structure.png`](figures/07_football_structure.png) | 115-team network + top brokers |
-| [`08_centrality_comparison.png`](figures/08_centrality_comparison.png) | Pearson/Spearman heatmaps for both networks |
-| [`09_football_communities.png`](figures/09_football_communities.png) | spectral sweep + recovered vs true conferences |
-| [`10_cross_dataset_robustness.png`](figures/10_cross_dataset_robustness.png) | karate vs football attack curves |
+| [`01_adjacency_and_degrees.png`](visualizations/01_adjacency_and_degrees.png) | adjacency matrix + degree distribution |
+| [`02_centrality_network.png`](visualizations/02_centrality_network.png) | network coloured by betweenness + top-10 bar chart |
+| [`03_pagerank.png`](visualizations/03_pagerank.png) | power-iteration convergence + PageRank ranking |
+| [`04_communities.png`](visualizations/04_communities.png) | Fiedler vs literal NJW at $k=2$ and $k=4$ |
+| [`05_robustness.png`](visualizations/05_robustness.png) | karate fragmentation with both denominators |
+| [`06_centrality_correlation.png`](visualizations/06_centrality_correlation.png) | Pearson vs Spearman for karate |
+| [`07_football_structure.png`](visualizations/07_football_structure.png) | 115-team network + top brokers |
+| [`08_centrality_comparison.png`](visualizations/08_centrality_comparison.png) | Pearson/Spearman heatmaps for both networks |
+| [`09_football_communities.png`](visualizations/09_football_communities.png) | spectral sweep + recovered vs true conferences |
+| [`10_cross_dataset_robustness.png`](visualizations/10_cross_dataset_robustness.png) | karate vs football attack curves |
 
 ---
 
