@@ -13,7 +13,7 @@ network. NetworkX appears only in one verification cell, as an independent refer
 | **Datasets** | Zachary's Karate Club (1977) and the college football network (2000), both embedded — no downloads |
 | **Stack** | Python 3, NumPy, Matplotlib, pandas (NetworkX optional) |
 | **Runtime** | under a minute on a free Colab CPU |
-| **Outputs** | 10 figures in [`visualizations/`](figures), printed result tables |
+| **Outputs** | 10 figures in [`visualizations/`](visualizations/), printed result tables |
 
 ---
 
